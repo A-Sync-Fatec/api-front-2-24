@@ -136,8 +136,8 @@ const CardAnalise: React.FC<CardAnaliseProps> = ({
                     <h2>{nomeProjeto}</h2>
                 </div>
                 <div className="cana_cima_dir">
-                  <div className="cabo_botoes botao">
-                      <img src={IconeEditar} alt="Ícone Editar" onClick={() => navigate(`/adm/analise/editar/${id}`)}/>
+                  <div className="cabo_botoes botao" onClick={() => navigate(`/adm/analise/editar/${id}`)}>
+                      <img src={IconeEditar} alt="Ícone Editar"/>
                   </div>
                   <div className="cabo_botoes botao excluir" onClick={excluirAnalise}>
                       <img src={IconeLixeira} alt="Ícone Lixeira" />
